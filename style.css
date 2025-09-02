@@ -66,6 +66,13 @@ nav ul li a:hover {
     transition: 0.2s ease;
 }
 
+hr {
+    border: none;
+    border-top: 1px solid #8a8a8a;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
 .home {
     margin-top: 10vh;
     display: flex;
@@ -152,8 +159,9 @@ nav ul li a:hover {
 
 .technologies {
     max-width: 1100px;
-    margin: 80px auto;
-    padding: 40px 20px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -171,7 +179,7 @@ nav ul li a:hover {
 }
 
 .card {
-    background: var(--background-secondary-color);
+    background: var(--background-color);
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
@@ -227,7 +235,7 @@ nav ul li a:hover {
         font-size: 1.2rem;
     }
     .card {
-    background: var(--background-secondary-color);
+    background: var(--background-color);
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
