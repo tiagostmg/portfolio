@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 :root {
   --header-height: 3rem;
@@ -18,7 +19,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Inter", "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -437,6 +438,31 @@ img {
 .skills-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente na linha */
+  gap: 25px; /* espaço entre ícones */
+  width: 100%;
+  /* margin: 20px auto;       */
+}
+
+/* centraliza especificamente quando .skills-content também usa .container */
+.skills-content.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px; /* adiciona um pouco de padding interno */
+  padding-right: 100px; /* adiciona um pouco de padding interno */
+}
+
+/* padrão para os ícones (consistente) */
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block; /* evita gaps de baseline */
+  transition: transform 0.18s ease;
+}
+.skill-icon:hover {
+  transform: scale(1.08);
 }
 
 .skills-name {
