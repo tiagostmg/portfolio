@@ -69,6 +69,8 @@ body.dark-theme {
 }
 
 .nav-btns {
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   align-items: center;
 }
@@ -79,6 +81,7 @@ body.dark-theme {
   color: var(--title-color);
   margin-right: 1rem;
   cursor: pointer;
+  transition: 0.3s ease-in;
 }
 
 .change-theme:hover {
@@ -166,7 +169,7 @@ img {
 .header {
   width: 100%;
   position: fixed;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
@@ -192,6 +195,7 @@ img {
 
 .nav-logo:hover {
   color: var(--first-color);
+  transition: 0.2s ease-in;
 }
 
 .nav-toggle {
@@ -233,6 +237,7 @@ img {
 
 .nav-link:hover {
   color: var(--first-color);
+  transition: 0.2s ease-in;
 }
 
 .nav-icon {
@@ -389,19 +394,6 @@ img {
 
 /* about  */
 
-.about-img {
-  width: 200px;
-  border: 0.5rem;
-  justify-self: center;
-  align-items: center;
-  filter: drop-shadow(1px 1px 1px var(--first-color-lighter));
-  transition: 0.3s;
-}
-
-.about-img:hover {
-  filter: drop-shadow(2px 2px 2px var(--first-color-lighter));
-}
-
 .about-description {
   text-align: center;
   margin-bottom: var(--margin-bottom-0-2-5);
@@ -449,8 +441,9 @@ img {
 .skills-content.container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 100px; /* adiciona um pouco de padding interno */
-  padding-right: 100px; /* adiciona um pouco de padding interno */
+  max-width: 650px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* padrão para os ícones (consistente) */
@@ -980,7 +973,11 @@ img {
     justify-self: center;
   }
 
-  .about-container,
+  .about-container {
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+
   .skills-container,
   .portfolio-content,
   .project-container,
@@ -1064,9 +1061,9 @@ img {
     margin-left: 3rem;
   }
 
-  .about-container {
+  /* .about-container {
     column-gap: 5rem;
-  }
+  } */
 
   .about-img {
     width: 350px;
@@ -1081,7 +1078,7 @@ img {
   }
 
   .about-buttons {
-    justify-content: initial;
+    justify-content: center;
   }
 
   .qualification-tabs {
