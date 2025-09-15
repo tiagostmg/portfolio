@@ -724,12 +724,13 @@ img {
 }
 
 .portfolio-content {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0 1.5rem;
   height: 100%;
+  text-align: center;
 }
 
 .portfolio-data {
@@ -737,7 +738,10 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 50vh;
+  padding: 0 2rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
 }
 
 .portfolio-img {
